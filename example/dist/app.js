@@ -20,9 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
-const indexRouter = __importStar(require("./routes/index"));
 const usersRouter = __importStar(require("./routes/users"));
 const app = express();
-app.use('/', indexRouter.index);
 app.use('/users', usersRouter.index);
 exports.default = app;

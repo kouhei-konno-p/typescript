@@ -7,7 +7,6 @@
   "exec": "ts-node ./src/bin/www.ts",
   "scripts": {
     "start": "npm run build && node ./dist/bin/www.js",
-    "start:dev": "nodemon",
     "build": "tsc",
     "watch": "tsc -w"
   },

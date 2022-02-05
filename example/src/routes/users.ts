@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
+import { getUserData } from "../services/user"
+import { userModel } from "../model/user";
 
-/* GET users listing. */
 export const index = (req: Request, res: Response) => {
-  res.send('respond with a resource');
+  const data = getUserData(userModel, '1');
+  res.send(data);
 };
