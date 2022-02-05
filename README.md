@@ -1,2 +1,2 @@
 # typescript
-serverless
+learn typescript
